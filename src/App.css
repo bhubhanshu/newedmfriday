@@ -6,6 +6,9 @@
   font-family: librebold;
   src: url('./LibreBaskerville-Bold.ttf');
 }
+#body{
+  width: 100%;
+}
 #loader{
   transform: scale(2);
   margin-top: 6rem;
@@ -57,4 +60,18 @@ a:hover{
 #listen{
   font-size: 1.2rem;
   color: #ffffff;
+}
+@media screen and (max-width: 500px){
+  h1{
+    font-size: 2rem;
+  }
+  h3{
+    font-size: 2rem;
+  }
+  #card{
+    margin-top: 1rem ;
+    width: 130px;
+    height: 180px;
+    overflow: hidden;
+  }
 }

@@ -62,7 +62,7 @@ class Main extends Component {
     }
     render() {
         return( 
-            <div>
+            <div id="body">
                 <Header />
                 <Songs songs={this.props.songs} />
                 <Footer />
