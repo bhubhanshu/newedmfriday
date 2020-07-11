@@ -1,0 +1,60 @@
+@font-face{
+  font-family: libre;
+  src: url('./LibreBaskerville-Regular.ttf');
+}
+@font-face{
+  font-family: librebold;
+  src: url('./LibreBaskerville-Bold.ttf');
+}
+#loader{
+  transform: scale(2);
+  margin-top: 6rem;
+}
+#heading{
+  font-family: librebold;
+  color: white;
+  align-items: center;
+  background-color: #000000;
+}
+h1{
+  font-size: 5rem;
+}
+h3{
+  font-family: libre;
+  font-size: 3rem;
+  margin: 2rem;
+}
+.footer{
+  font-family: libre;
+  background-color: #000000;
+  margin:0px auto;
+  padding: 2rem 0px;
+  color: white;
+}
+
+a{
+  padding: 2rem 3rem;
+  transform: scale(2);
+}
+a:hover{
+  text-decoration: none;
+  color: green;
+}
+#card{
+  margin: 2rem;
+  width: 250px;
+  height: 300px;
+  overflow: hidden;
+}
+#card a{
+  padding: 0;
+
+}
+#songtitle{
+  font-family: librebold;
+  font-size: 1rem;
+}
+#listen{
+  font-size: 1.2rem;
+  color: #ffffff;
+}
