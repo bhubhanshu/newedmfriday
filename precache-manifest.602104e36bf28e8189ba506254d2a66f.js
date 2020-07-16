@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "7079adeff77789a2b95647d599e2c3c9",
+    "revision": "4fa4bd589bc0499f65d17f2ec046dd95",
     "url": "/newedmfriday/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/newedmfriday/static/css/2.b0c19407.chunk.css"
   },
   {
-    "revision": "64519af0a7e102ce4b2b",
-    "url": "/newedmfriday/static/css/main.93a5c628.chunk.css"
+    "revision": "3ab12952a20570ad09bd",
+    "url": "/newedmfriday/static/css/main.d73ca805.chunk.css"
   },
   {
     "revision": "6a338b7fb4504bbb4132",
@@ -20,7 +20,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/newedmfriday/static/js/2.33171d8c.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "64519af0a7e102ce4b2b",
+    "revision": "3ab12952a20570ad09bd",
     "url": "/newedmfriday/static/js/main.15ea34f7.chunk.js"
   },
   {

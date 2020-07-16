@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/newedmfriday/static/css/main.93a5c628.chunk.css",
+    "main.css": "/newedmfriday/static/css/main.d73ca805.chunk.css",
     "main.js": "/newedmfriday/static/js/main.15ea34f7.chunk.js",
     "main.js.map": "/newedmfriday/static/js/main.15ea34f7.chunk.js.map",
     "runtime-main.js": "/newedmfriday/static/js/runtime-main.3f488e79.js",
@@ -9,10 +9,10 @@
     "static/js/2.33171d8c.chunk.js": "/newedmfriday/static/js/2.33171d8c.chunk.js",
     "static/js/2.33171d8c.chunk.js.map": "/newedmfriday/static/js/2.33171d8c.chunk.js.map",
     "index.html": "/newedmfriday/index.html",
-    "precache-manifest.c206d8c0fad0ebdfc0e2b160eef7d3ea.js": "/newedmfriday/precache-manifest.c206d8c0fad0ebdfc0e2b160eef7d3ea.js",
+    "precache-manifest.602104e36bf28e8189ba506254d2a66f.js": "/newedmfriday/precache-manifest.602104e36bf28e8189ba506254d2a66f.js",
     "service-worker.js": "/newedmfriday/service-worker.js",
     "static/css/2.b0c19407.chunk.css.map": "/newedmfriday/static/css/2.b0c19407.chunk.css.map",
-    "static/css/main.93a5c628.chunk.css.map": "/newedmfriday/static/css/main.93a5c628.chunk.css.map",
+    "static/css/main.d73ca805.chunk.css.map": "/newedmfriday/static/css/main.d73ca805.chunk.css.map",
     "static/js/2.33171d8c.chunk.js.LICENSE.txt": "/newedmfriday/static/js/2.33171d8c.chunk.js.LICENSE.txt",
     "static/media/App.css": "/newedmfriday/static/media/LibreBaskerville-Regular.228126bc.ttf",
     "static/media/font-awesome.min.css": "/newedmfriday/static/media/fontawesome-webfont.fee66e71.woff"
@@ -21,7 +21,7 @@
     "static/js/runtime-main.3f488e79.js",
     "static/css/2.b0c19407.chunk.css",
     "static/js/2.33171d8c.chunk.js",
-    "static/css/main.93a5c628.chunk.css",
+    "static/css/main.d73ca805.chunk.css",
     "static/js/main.15ea34f7.chunk.js"
   ]
 }
