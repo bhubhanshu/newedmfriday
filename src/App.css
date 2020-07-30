@@ -74,4 +74,8 @@ a:hover{
     height: 180px;
     overflow: hidden;
   }
+  #listen{
+    font-size: 0.6rem;
+    color: #ffffff;
+  }
 }

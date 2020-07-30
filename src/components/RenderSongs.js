@@ -80,7 +80,7 @@ const Songs = (props) => {
             <div className="container-fluid">
                 <div className="row">
                     <div className="col-12">
-                        <h3>Friday July 10th</h3>
+                        <h3>Friday July 31st</h3>
                         <hr />
                     </div>
                 </div>
