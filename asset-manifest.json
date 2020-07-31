@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/newedmfriday/static/css/main.d73ca805.chunk.css",
-    "main.js": "/newedmfriday/static/js/main.15ea34f7.chunk.js",
-    "main.js.map": "/newedmfriday/static/js/main.15ea34f7.chunk.js.map",
+    "main.js": "/newedmfriday/static/js/main.995daadd.chunk.js",
+    "main.js.map": "/newedmfriday/static/js/main.995daadd.chunk.js.map",
     "runtime-main.js": "/newedmfriday/static/js/runtime-main.3f488e79.js",
     "runtime-main.js.map": "/newedmfriday/static/js/runtime-main.3f488e79.js.map",
     "static/css/2.b0c19407.chunk.css": "/newedmfriday/static/css/2.b0c19407.chunk.css",
     "static/js/2.33171d8c.chunk.js": "/newedmfriday/static/js/2.33171d8c.chunk.js",
     "static/js/2.33171d8c.chunk.js.map": "/newedmfriday/static/js/2.33171d8c.chunk.js.map",
     "index.html": "/newedmfriday/index.html",
-    "precache-manifest.602104e36bf28e8189ba506254d2a66f.js": "/newedmfriday/precache-manifest.602104e36bf28e8189ba506254d2a66f.js",
+    "precache-manifest.f92d9fbd5a82eabd2debee3ecb64f3b9.js": "/newedmfriday/precache-manifest.f92d9fbd5a82eabd2debee3ecb64f3b9.js",
     "service-worker.js": "/newedmfriday/service-worker.js",
     "static/css/2.b0c19407.chunk.css.map": "/newedmfriday/static/css/2.b0c19407.chunk.css.map",
     "static/css/main.d73ca805.chunk.css.map": "/newedmfriday/static/css/main.d73ca805.chunk.css.map",
@@ -22,6 +22,6 @@
     "static/css/2.b0c19407.chunk.css",
     "static/js/2.33171d8c.chunk.js",
     "static/css/main.d73ca805.chunk.css",
-    "static/js/main.15ea34f7.chunk.js"
+    "static/js/main.995daadd.chunk.js"
   ]
 }
