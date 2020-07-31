@@ -8,6 +8,7 @@
 }
 #body{
   width: 100%;
+  background-color: black;
 }
 #loader{
   transform: scale(2);
@@ -26,6 +27,7 @@ h3{
   font-family: libre;
   font-size: 3rem;
   margin: 2rem;
+  color: #ffffff;
 }
 .footer{
   font-family: libre;
@@ -34,7 +36,6 @@ h3{
   padding: 2rem 0px;
   color: white;
 }
-
 a{
   padding: 2rem 3rem;
   transform: scale(2);
@@ -47,19 +48,39 @@ a:hover{
   margin: 2rem;
   width: 250px;
   height: 300px;
-  overflow: hidden;
+  border: 1px groove grey;
+  border-radius: 15px;
+  box-shadow: 0px 0px 4px 4px green;
+  transition: all ease-in-out 0.7s;
+}
+#card:hover{
+  transform: scale(1.1);
 }
 #card a{
   padding: 0;
-
 }
 #songtitle{
   font-family: librebold;
   font-size: 1rem;
+  color: #ffffff;
+}
+#cardbody{
+  background-color: black;
+  border-radius: 0px 0px 15px 15px;
+  overflow: hidden;
+}
+#cardbody:hover{
+  overflow-y: auto;
 }
 #listen{
   font-size: 1.2rem;
   color: #ffffff;
+}
+#btn{
+  /* width: 2rem; */
+  position: absolute;
+  top: 35%;
+  background-color: #000000;
 }
 @media screen and (max-width: 500px){
   h1{
@@ -72,10 +93,9 @@ a:hover{
     margin-top: 1rem ;
     width: 130px;
     height: 180px;
-    overflow: hidden;
   }
   #listen{
-    font-size: 0.6rem;
+    font-size: 0.5rem;
     color: #ffffff;
   }
 }

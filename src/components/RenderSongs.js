@@ -23,12 +23,13 @@ class RenderSong extends Component {
         });
     }
     render() {
-        var cardcss = { opacity: '1' };
-        var btncss = { position: 'absolute', top: '35%', 'background-color': '#000000', display: 'none', 'border-radius': '2rem' }
+        var cardcss = { opacity: '1', 'border-radius': '15px 15px 0px 0px' };
+        var btncss = { position: 'absolute', top: '35%', 'background-color': '#000000', display: 'none', 'border-radius': '2rem' , 'font-family': 'libre', 'z-index': '0'}
         if (this.state.hover) {
             btncss.display = 'inline';
-            cardcss.opacity = '0.4';
+            cardcss.opacity = '0.9';
             cardcss.transition = '0.5s ease-in-out';
+            btncss['z-index']='1';
         }
         if (this.state.btnhover) {
             btncss['background-color'] = 'green';
@@ -36,13 +37,17 @@ class RenderSong extends Component {
         }
         return (
             <div className="col-6 col-md-2">
-                <Card id="card" onMouseEnter={this.toggleHover} onMouseLeave={this.toggleHover} >
-                    <CardImg top src={this.props.song.img} alt={this.props.song.name} height="75%" style={cardcss} />
-                    <CardBody>
-                        <CardTitle id="songtitle">{this.props.song.name}</CardTitle>
-                        <Button style={btncss} onMouseLeave={this.togglebtnHover} onMouseEnter={this.togglebtnHover}><a href={this.props.song.song_url} id="listen" target="_blank">Listen On &ensp;<i className="fa fa-spotify"></i> Spotify</a></Button>
-                    </CardBody>
-                </Card>
+                <div className="row">
+                    <Card id="card" onMouseEnter={this.toggleHover} onMouseLeave={this.toggleHover} >
+                        <div className="row justify-content-center" >
+                            <Button style={btncss} onMouseLeave={this.togglebtnHover} onMouseEnter={this.togglebtnHover}><a href={this.props.song.song_url} id="listen" target="_blank">Listen On &ensp;<i className="fa fa-spotify"></i> Spotify</a></Button>
+                        </div>
+                        <CardImg top src={this.props.song.img} alt={this.props.song.name} height="75%" style={cardcss} />
+                        <CardBody id="cardbody">
+                            <CardTitle id="songtitle">{this.props.song.name}</CardTitle>
+                        </CardBody>
+                    </Card>
+                </div>
             </div>
         );
     }
