@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/newedmfriday/static/css/main.d73ca805.chunk.css",
-    "main.js": "/newedmfriday/static/js/main.995daadd.chunk.js",
-    "main.js.map": "/newedmfriday/static/js/main.995daadd.chunk.js.map",
+    "main.css": "/newedmfriday/static/css/main.6076607b.chunk.css",
+    "main.js": "/newedmfriday/static/js/main.ffd49399.chunk.js",
+    "main.js.map": "/newedmfriday/static/js/main.ffd49399.chunk.js.map",
     "runtime-main.js": "/newedmfriday/static/js/runtime-main.3f488e79.js",
     "runtime-main.js.map": "/newedmfriday/static/js/runtime-main.3f488e79.js.map",
     "static/css/2.b0c19407.chunk.css": "/newedmfriday/static/css/2.b0c19407.chunk.css",
-    "static/js/2.33171d8c.chunk.js": "/newedmfriday/static/js/2.33171d8c.chunk.js",
-    "static/js/2.33171d8c.chunk.js.map": "/newedmfriday/static/js/2.33171d8c.chunk.js.map",
+    "static/js/2.c2595bfe.chunk.js": "/newedmfriday/static/js/2.c2595bfe.chunk.js",
+    "static/js/2.c2595bfe.chunk.js.map": "/newedmfriday/static/js/2.c2595bfe.chunk.js.map",
     "index.html": "/newedmfriday/index.html",
-    "precache-manifest.f92d9fbd5a82eabd2debee3ecb64f3b9.js": "/newedmfriday/precache-manifest.f92d9fbd5a82eabd2debee3ecb64f3b9.js",
+    "precache-manifest.44eb4e4fb34cf499d64c8db19e19892e.js": "/newedmfriday/precache-manifest.44eb4e4fb34cf499d64c8db19e19892e.js",
     "service-worker.js": "/newedmfriday/service-worker.js",
     "static/css/2.b0c19407.chunk.css.map": "/newedmfriday/static/css/2.b0c19407.chunk.css.map",
-    "static/css/main.d73ca805.chunk.css.map": "/newedmfriday/static/css/main.d73ca805.chunk.css.map",
-    "static/js/2.33171d8c.chunk.js.LICENSE.txt": "/newedmfriday/static/js/2.33171d8c.chunk.js.LICENSE.txt",
-    "static/media/App.css": "/newedmfriday/static/media/LibreBaskerville-Regular.228126bc.ttf",
+    "static/css/main.6076607b.chunk.css.map": "/newedmfriday/static/css/main.6076607b.chunk.css.map",
+    "static/js/2.c2595bfe.chunk.js.LICENSE.txt": "/newedmfriday/static/js/2.c2595bfe.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/newedmfriday/static/media/SourceSansPro-Regular.c1678b46.ttf",
     "static/media/font-awesome.min.css": "/newedmfriday/static/media/fontawesome-webfont.fee66e71.woff"
   },
   "entrypoints": [
     "static/js/runtime-main.3f488e79.js",
     "static/css/2.b0c19407.chunk.css",
-    "static/js/2.33171d8c.chunk.js",
-    "static/css/main.d73ca805.chunk.css",
-    "static/js/main.995daadd.chunk.js"
+    "static/js/2.c2595bfe.chunk.js",
+    "static/css/main.6076607b.chunk.css",
+    "static/js/main.ffd49399.chunk.js"
   ]
 }

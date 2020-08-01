@@ -1,39 +1,39 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "62519e7f2878781453dab2cdf050da78",
+    "revision": "df14c5057b89417df62196a988c92443",
     "url": "/newedmfriday/index.html"
   },
   {
-    "revision": "6a338b7fb4504bbb4132",
+    "revision": "5e39afaff0381a6e9310",
     "url": "/newedmfriday/static/css/2.b0c19407.chunk.css"
   },
   {
-    "revision": "53cb4346a9561170fea4",
-    "url": "/newedmfriday/static/css/main.d73ca805.chunk.css"
+    "revision": "e0f155ef96b984a3bc40",
+    "url": "/newedmfriday/static/css/main.6076607b.chunk.css"
   },
   {
-    "revision": "6a338b7fb4504bbb4132",
-    "url": "/newedmfriday/static/js/2.33171d8c.chunk.js"
+    "revision": "5e39afaff0381a6e9310",
+    "url": "/newedmfriday/static/js/2.c2595bfe.chunk.js"
   },
   {
     "revision": "3453b8997016469371284a28c0e873e2",
-    "url": "/newedmfriday/static/js/2.33171d8c.chunk.js.LICENSE.txt"
+    "url": "/newedmfriday/static/js/2.c2595bfe.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "53cb4346a9561170fea4",
-    "url": "/newedmfriday/static/js/main.995daadd.chunk.js"
+    "revision": "e0f155ef96b984a3bc40",
+    "url": "/newedmfriday/static/js/main.ffd49399.chunk.js"
   },
   {
     "revision": "9ab461fd0bffb272cee8",
     "url": "/newedmfriday/static/js/runtime-main.3f488e79.js"
   },
   {
-    "revision": "a105ee341ae407dc0a16dcb77a5b78aa",
-    "url": "/newedmfriday/static/media/LibreBaskerville-Bold.a105ee34.ttf"
+    "revision": "8669b8706bbbdd1482e2fccc4ed96850",
+    "url": "/newedmfriday/static/media/SourceSansPro-Bold.8669b870.ttf"
   },
   {
-    "revision": "228126bc49970c1f293e1bf96e8e2604",
-    "url": "/newedmfriday/static/media/LibreBaskerville-Regular.228126bc.ttf"
+    "revision": "c1678b46f7dd3f50ceac94ed4e0ad01a",
+    "url": "/newedmfriday/static/media/SourceSansPro-Regular.c1678b46.ttf"
   },
   {
     "revision": "674f50d287a8c48dc19ba404d20fe713",
