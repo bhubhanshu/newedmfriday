@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Loading from './LoadingComponent';
 import Songs from './RenderSongs'
 import { withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';

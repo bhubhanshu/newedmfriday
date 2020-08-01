@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Loading from './LoadingComponent';
-import { Card, CardImg, CardBody, CardTitle, Button } from 'reactstrap';
+import { Card, CardImg, CardBody, CardTitle, Button, CardText, CardSubtitle } from 'reactstrap';
 
 class RenderSong extends Component {
     constructor(props) {
@@ -44,7 +44,12 @@ class RenderSong extends Component {
                         </div>
                         <CardImg top src={this.props.song.img} alt={this.props.song.name} height="75%" style={cardcss} />
                         <CardBody id="cardbody">
-                            <CardTitle id="songtitle">{this.props.song.name}</CardTitle>
+                            <CardTitle id="songtitle" data-toggle="tooltip" data-placement="right" title={this.props.song.name}>{this.props.song.name}</CardTitle>
+                            <CardSubtitle id="artist">{this.props.song.artists.map(artist => {
+                                return(
+                                    <a href={artist.external_urls.spotify} data-toggle="tooltip" data-placement="right" title={artist.name}>{artist.name} &nbsp;</a> 
+                                )
+                            })}</CardSubtitle>
                         </CardBody>
                     </Card>
                 </div>
