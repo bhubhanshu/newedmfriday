@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Loading from './LoadingComponent';
-import { Card, CardImg, CardBody, CardTitle, Button, CardText, CardSubtitle } from 'reactstrap';
+import { Card, CardImg, CardBody, CardTitle, Button, CardSubtitle } from 'reactstrap';
+import { Switch } from 'react-router-dom';
 
 class RenderSong extends Component {
     constructor(props) {
@@ -58,47 +59,134 @@ class RenderSong extends Component {
     }
 }
 
+class Songs extends Component {
+    constructor(props){
+        super(props);
+        this.state={
+            drop: false,
+            artists: [],
+            displaySongs: [],
+            allArtists: []
+        };
+        this.toggleFilter=this.toggleFilter.bind(this);
+        this.addFilter = this.addFilter.bind(this);
+        this.removeFilter = this.removeFilter.bind(this);
+    }
 
-const Songs = (props) => {
-    const songs = props.songs.songs.map((song) => {
-        return (
-            <RenderSong song={song} />
-        );
-    });
-    if (props.songs.isLoading) {
-        return (
-            <div className="container">
-                <div className="row justify-content-center">
-                    <Loading />
-                </div>
-            </div>
-        );
+    toggleFilter(){
+        this.setState({
+            drop: !this.state.drop
+        });
     }
-    else if (props.songs.errMess) {
-        return (
-            <div className="container">
-                <div className="row">
-                    <div className="col-12">
-                        <h4>{props.songs.errMess}</h4>
+    addFilter(artist){
+        this.setState({
+            artists: this.state.artists.concat(artist)
+        });
+    }
+    removeFilter(artist){
+        var index = this.state.artists.indexOf(artist);
+        this.state.artists.splice(index,1);
+        this.setState({
+            artists: this.state.artists
+        });
+    }
+    render() {
+        this.state.displaySongs=[];
+        if(this.state.artists.length !== 0){
+            this.props.songs.songs.map((song) => {
+                const temp=song.artists;
+                for(var i=0; i<temp.length; i++){
+                    if(this.state.artists.indexOf(song.artists[i].name) !== -1){
+                        if(this.state.displaySongs.indexOf(song) === -1){
+                            this.state.displaySongs.push(song);
+                        }
+                        break;
+                    }
+                }
+            });
+        }
+        else{
+            this.state.displaySongs=this.props.songs.songs;
+        }
+        this.props.songs.songs.map((song) => {
+            const temp=song.artists;
+            for(var i=0; i<temp.length; i++){
+                if(this.state.allArtists.indexOf(temp[i].name) === -1){
+                    this.state.allArtists.push(temp[i].name);
+                    break;
+                }
+            }
+        });
+
+        this.state.allArtists.sort();
+        const Filter = () => {
+            var filtercss = { display : 'none'};
+            if(this.state.drop){
+                filtercss.display='block';
+            }
+            return(
+                <div>
+                <Button onClick={this.toggleFilter} color="success">
+                    Filter Songs By Artists {this.state.drop ? <i class="fa fa-angle-double-up" aria-hidden="true"></i> : <i class="fa fa-angle-double-down" aria-hidden="true"></i>}
+                </Button>
+                <div style={filtercss} id="filter">  
+                    {this.state.allArtists.map((artist) => {
+                        if(this.state.artists.indexOf(artist) !== -1){
+                            return(
+                                <Button id="filteritem" color="success" onClick={() => this.removeFilter(artist)}>{artist}</Button>
+                            );
+                        }
+                        return(
+                            <Button id="filteritem" color="black" onClick={() => this.addFilter(artist)}>{artist}</Button>
+                        );
+                    })}
+                </div>
+                </div>
+            );
+        }
+        const songs = this.state.displaySongs.map((song) => {
+            return (
+                <RenderSong song={song} />
+            );
+        });
+        if (this.props.songs.isLoading) {
+            return (
+                <div className="container">
+                    <div className="row justify-content-center">
+                        <Loading />
                     </div>
                 </div>
-            </div>
-        );
-    }
-    else
-        return (
-            <div className="container-fluid">
-                <div className="row">
-                    <div className="col-12">
-                        <h3>Friday July 31st</h3>
-                        <hr />
+            );
+        }
+        else if (this.props.songs.errMess) {
+            return (
+                <div className="container">
+                    <div className="row">
+                        <div className="col-12">
+                            <h4>{this.props.songs.errMess}</h4>
+                        </div>
                     </div>
                 </div>
-                <div className="row">
-                    {songs}
+            );
+        }
+        else
+            return (
+                <div className="container-fluid">
+                    <div className="row">
+                        <div className="col-6">
+                            <h3>Friday July 31st</h3>
+                        </div>
+                        <div className="offset-md-3 my-5 justify-content-end">
+                            <Filter />
+                        </div>
+                    </div>
+                    <hr />
+                    <div className="row">
+                        {songs}
+                    </div>
                 </div>
-            </div>
-        );
+            );
+    }
 }
 
 export default Songs;
