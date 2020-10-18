@@ -72,7 +72,7 @@ class Songs extends Component {
         this.addFilter = this.addFilter.bind(this);
         this.removeFilter = this.removeFilter.bind(this);
     }
-
+    
     toggleFilter(){
         this.setState({
             drop: !this.state.drop
@@ -92,6 +92,9 @@ class Songs extends Component {
     }
     render() {
         this.state.displaySongs=[];
+        const t = new Date().getDate() + (6 - new Date().getDay() - 1) - 7 ;
+        const lastFriday = new Date();
+        lastFriday.setDate(t);
         if(this.state.artists.length !== 0){
             this.props.songs.songs.map((song) => {
                 const temp=song.artists;
@@ -174,7 +177,7 @@ class Songs extends Component {
                 <div className="container-fluid">
                     <div className="row">
                         <div className="col-6">
-                            <h3>Friday July 31st</h3>
+                            <h3>{lastFriday.toDateString()}</h3>
                         </div>
                         <div className="offset-md-3 my-5 justify-content-end">
                             <Filter />
