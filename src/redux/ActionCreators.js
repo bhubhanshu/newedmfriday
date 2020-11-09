@@ -1,7 +1,11 @@
 import * as ActionTypes from './ActionTypes';
 
 export const fetchSongs = () => (dispatch) => {
-    return fetch('https://api.npoint.io/c62d1b2e591c41008bbc')
+    return fetch('https://api.jsonbin.io/b/5fa94e8d2769cc5b06ad3828',{
+        headers: {
+            'secret-key': '$2b$10$ue12ANlX4Ga8vojhFMlgCu25fhVTK1GP.A4CJuRMpC66OFGc.6yuK'
+        }
+    })
         .then(response => {
             if (response.ok) {
                 return response;
