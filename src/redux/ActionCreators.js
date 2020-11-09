@@ -1,7 +1,7 @@
 import * as ActionTypes from './ActionTypes';
 
 export const fetchSongs = () => (dispatch) => {
-    return fetch('https://api.npoint.io/3afc6c645a96f8d71317')
+    return fetch('https://api.npoint.io/c62d1b2e591c41008bbc')
         .then(response => {
             if (response.ok) {
                 return response;
